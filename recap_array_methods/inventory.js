@@ -79,11 +79,11 @@ const inventory = [
 // Using .forEach() --> Printing the names of each inventory item
 const printInventoryList = (key) => {
 	console.log(`${key} of inventory items`);
-	inventory.forEach((item, index) => {
-		console.log(`${index + 1}: ${Object.values(item[key]).join("")}`);
+	inventory.forEach((item, a) => {
+		console.log(`${a + 1}: ${item[key].join("")}`);
 	});
 };
-// printInventoryList("name");
+printInventoryList("name");
 
 const randomCouponCode = () => {
 	return Math.random().toString(16).slice(2, 8).toUpperCase();
@@ -165,6 +165,6 @@ const formattedTotalValue = new Intl.NumberFormat("en-US", {
 	currency: "USD",
 }).format(totalValue);
 
-console.log("Total value of all items:", formattedTotalValue);
+// console.log("Total value of all items:", formattedTotalValue);
 
 // console.log(inventory);

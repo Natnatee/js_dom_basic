@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const taskInput = document.getElementById("task-input");
-	const addTaskBtn = document.getElementById("add-task-btn");
-	const searchInput = document.getElementById("search-input");
-	const searchBtn = document.getElementById("search-btn");
-	const taskList = document.getElementById("task-list");
+	const taskInput = document.querySelector("#task-input");
+	const addTaskBtn = document.querySelector("#add-task-btn");
+	const searchInput = document.querySelector("#search-input");
+	const searchBtn = document.querySelector("#search-btn");
+	const taskList = document.querySelector("#task-list");
 
 	let tasks = [];
 
